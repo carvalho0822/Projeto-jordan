@@ -1,18 +1,20 @@
 @charset "UTF-8";
 
 @media (max-width: 768px) {
-    .menu {
-        flex-direction: column;   /* itens ficam um embaixo do outro */
-        align-items: center;
-    }
-
     .menu a {
-        margin: 0.5rem 0;         /* espaço vertical entre os links */
-        font-size: 1.1rem;        /* levemente menor no celular */
+        margin: 0 0.5rem;   /* menos espaço lateral */
+        font-size: 0.9rem;  /* texto um pouco menor */
     }
+}
 
-    .icones {
-        margin-top: 10px;         /* separa os ícones do menu */
+.icones img {
+    width: 22px;
+}
+
+@media (max-width: 768px) {
+    .icones img {
+        width: 18px;
+        margin: 0 5px;
     }
 }
 
